@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmyportefolioremarkesite=self.webpackChunkmyportefolioremarkesite||[]).push([[98],{7994:function(e,t,n){n.r(t),n.d(t,{Head:function(){return l}});var a=n(7294);const l=()=>a.createElement("title",null,"Contacts page");t.default=()=>a.createElement("main",null,a.createElement("h1",null,"Contacts Page"))}}]);
+//# sourceMappingURL=component---src-pages-contacts-js-0afd71f8b2bfa9ddb996.js.map
