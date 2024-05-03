@@ -8,17 +8,28 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -H 192.168.1.102 -p 8080",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@react-three/drei": "^9.88.0",
+    "@react-three/fiber": "^8.14.5",
+    "classnames": "^2.3.2",
+    "curtainsjs": "^8.1.5",
+    "framer-motion": "^10.13.0",
     "gatsby": "^5.11.0",
     "gatsby-plugin-sass": "^6.11.0",
+    "gsap": "^3.12.2",
+    "locomotive-scroll": "^4.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.63.6"
+    "react-intersection-observer": "^9.5.2",
+    "react-locomotive-scroll": "^0.2.2",
+    "react-use-dimensions": "^1.2.1",
+    "sass": "^1.63.6",
+    "three": "^0.157.0"
   }
 }

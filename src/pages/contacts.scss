@@ -1,0 +1,193 @@
+.transition{
+    transition: all 4s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%) !important;
+}
+.contacts-hidden{
+    overflow: hidden;
+    height: fit-content;
+}
+.contacts-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    overflow: hidden;
+    position: fixed;
+    @media screen and (max-width:767px) {
+        flex-direction: column;
+        overflow-y: scroll;
+        height: auto;
+        position: static;
+
+    }
+
+    .contacts-form-container{
+        width: 40%;
+        height: 100vh;
+        background-color:#f8f7f8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width:767px) {
+           width: 100%;
+    
+        }
+
+        .contacts-form{
+            width: 70%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            color: #161616;
+            align-items: center;
+           
+            .contacts-from-title{
+                font: bolder 4rem "Poppins", sans-serif;
+                line-height: 3rem;
+                margin-bottom: 2rem;
+            }
+            .contacts-form-text{
+                font: lighter 0.8rem "Poppins", sans-serif;
+            }
+
+            .contacts-from-input{
+                width: 100%;
+                padding: 1rem;
+                border: solid 1px #E6E6E6;
+                border-radius: 5rem;
+                margin-top: 1rem;
+                background-color: transparent;
+                @media screen and (max-width:767px) {
+                    border: solid 2.5px #E6E6E6;
+             
+                 }
+
+
+                &::placeholder{
+                    font: lighter 1rem "Poppins", sans-serif;
+                    @media screen and (max-width:767px) {
+                        font: 400 1rem "Poppins", sans-serif;
+                 
+                     }
+                }
+            }
+            .btn-form{
+                transition: all 4s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%);
+                width: 100%;
+                border-radius: 5rem;
+                padding: 1rem;
+                color: #f8f7f8;
+                background-color: #161616;
+                font: lighter 1rem "Poppins", sans-serif;
+                margin-top: 1.5rem;
+                border: solid 1px #161616;
+                cursor: pointer;
+
+                @media screen and (max-width:767px) {
+                    font: 400 1rem "Poppins", sans-serif;
+             
+                 }
+                
+
+                &:hover{
+                    transition: all 4s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%);
+                    background-color: transparent;
+                    border: solid 1px #E6E6E6;
+                    background-color: #E6E6E6;
+                    color: #161616;
+                    
+                }
+            }
+        }
+    }
+    .contacts-text-container{
+        width: 60%;
+        height: 100vh;
+        background-color: #161616;
+        border-top-left-radius: 20%;
+        // border-bottom-left-radius: 7rem;
+        display: flex;
+        flex-direction: column;
+        color: #f8f7f8;
+        align-items: center;
+        justify-content: flex-end;
+
+        @media screen and (max-width:767px) {
+            width: 100%;
+            border-top-left-radius: 0%;
+     
+         }
+
+
+
+        .contacts-text-footer{
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            
+            .contacts-text-num{
+                padding: 0.5rem;
+                padding-right: 2rem;
+                font: bolder 0.7rem "Poppins", sans-serif;
+
+            }
+        }
+        .contacts-text-top{
+            transition: all 4s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%);
+            width: 70%;
+            height: 90%;
+            .contacts-text-top-title{
+                font: bolder 7rem "Poppins", sans-serif;
+                line-height: 4.5rem;
+                margin-bottom: 1rem;
+
+                @media screen and (max-width:767px) {
+                    font: bolder 4rem "Poppins", sans-serif;
+                    line-height: 3.5rem;
+                }
+    
+            }
+            .contacts-text-top-text{
+                font: lighter 0.8rem "Poppins", sans-serif;
+
+                @media screen and (max-width:767px) {
+                    font: 400 1rem "Poppins", sans-serif;
+             
+                 }
+            }
+            .contacts-text-top-other-contacts{
+                font: lighter 4rem "Poppins", sans-serif;
+                line-height: 3rem;
+                color: #AE9CAE;
+                margin-top: 3rem;
+            }
+            .contacts-other-container{
+                margin-top: 1rem;
+                padding-top:0.5rem;
+                padding-bottom: 0.5rem;
+                border-top: solid 0.1px transparent;
+                .contacts-other{
+                    font: bolder 4rem "Poppins", sans-serif;
+                    line-height: 3rem;
+                    margin-top: 1.5rem;
+                    display: block;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            
+
+
+        }
+       
+
+
+        
+    }
+
+   
+
+}

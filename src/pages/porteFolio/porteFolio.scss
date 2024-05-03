@@ -1,0 +1,59 @@
+$textcolor:#161616;
+$backgroundColor:#161616;
+$workcontainer:#E5E5E5;
+.header-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title{
+        width: 80%;
+        font-size:10rem ;
+        font-weight: bolder;
+        font-family: "Poppins";
+        color: $textcolor;
+        line-height: 8rem;
+        margin-top: 5rem;
+        mix-blend-mode: exclusion;
+        text-transform: uppercase;
+        display: none;
+
+        @media screen and (max-width:767px) {
+            font: bolder 3.5rem "Poppins", sans-serif;
+            line-height: 3rem;
+            width: 100%;
+            margin-top: 5rem;
+            text-align: center;
+            display: block;
+    
+
+        }
+       
+    }
+    .small-text-container{
+        width: 80%;
+        margin-top: 1rem;
+        color: $backgroundColor;
+       .small-text-title{
+        font: bolder 1rem "Poppins",sans-serif;
+       }
+       .small-text{
+        font: lighter 0.8rem "Poppins",sans-serif;
+       }
+    }
+ 
+
+}
+
+.works-container{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5rem;
+
+   
+}

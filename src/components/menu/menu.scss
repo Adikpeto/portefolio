@@ -1,0 +1,349 @@
+$textcolor:#F8F7F8;
+$linkcolor:#E9E9E9;
+$menuTopColor:#161616;
+
+svg{
+    opacity: 1;
+    
+    
+}
+.hidden{
+    overflow: hidden;
+    height:fit-content;
+    width: fit-content;
+    width: 50%;
+}
+.menu-container {
+    width: 100%;
+    z-index: 100000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+
+    .menu {
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: transparent;
+        pointer-events: none;
+
+
+
+
+
+        .menu-body {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            // clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+            pointer-events: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            opacity: 0;
+            align-items: center;
+
+            @media screen and (max-width:767px){
+               flex-direction: column;
+            }
+
+
+            .img_fixed{
+                transition: transform 2s cubic-bezier(0.165,0.84,0.44,1);
+                width: 150px;
+                height: 250px;
+                background-position: center;
+                background-size: cover;
+                background-color: #494949;
+                position: fixed;
+                right: 45%;
+                top: 20%;
+                // transform: translate3d(-70%,0,0) rotate(10deg);
+                z-index: -1;
+                background-color: #c2c2c2;
+                // backdrop-filter: blur(5px);
+                // filter: blur(5px);
+                
+                
+            }
+            .img-acceuil{
+                background-image: url('../../images/person4.jpg') !important;
+            }
+            .img-skills{
+                background-image: url('../../images/author-image-2-646x680.jpg') !important;
+            }
+            .img-portefolio{
+                background-image: url('../../images/person3.jpg') !important;
+            }
+            .img-contacts{
+                background-image: url('../../images/img_2.jpg') !important;
+            }
+
+
+
+            .menu-descriptions {
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                color: $linkcolor;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding-left: 14rem;
+                padding-top: 1rem;
+                mix-blend-mode: unset;
+                background-blend-mode: unset;
+
+                @media screen and (max-width:767px){
+                    display: none;
+                 }
+                
+                .menu-descriptions-name {
+                    // transform: translate(0px, 0px) matrix3d(1, 0, 0, 0, 0, 1, 0, -0.0005, 0, 0, 1, 0, 0, 0, 0, 1);
+                    line-height: 5rem;
+                   
+                    font: {
+                        size: 7rem;
+                        weight: bolder;
+                        family: "Poppins", sans-serif;
+
+                    }
+
+                    ;
+                }
+
+
+                .menu-competence {
+                    padding-top: 1rem;
+
+                    .menu-competence-title {
+                        font-size: 5rem;
+                        font-family: "Poppins", sans-serif;
+                        font-weight: lighter;
+                        line-height: 4.5rem;
+
+                        .menu-competence-sticker {
+                            width: 40px;
+                            height: 40px;
+                            display: inline-block;
+                            background-image: url("../../images/png/Crazy.png");
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                        }
+
+                    }
+
+                }
+
+                .menu-descriptions-small-profil {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: "Poppins", sans-serif;
+                    padding-top: 3rem;
+                    width: 80%;
+
+                    .menu-small-title {
+                        font-size: 0.8rem;
+                        font-weight: 900;
+                    }
+
+                    .menu-small-text {
+                        font-size: 0.8rem;
+                        font-weight: lighter;
+                        @media screen and (max-width:767px) {
+                            font: 400 .8rem "Poppins", sans-serif;
+                     
+                         }
+                    }
+                }
+            }
+
+            .menu-links-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // align-items: center;
+                width: 40%;
+                @media screen and (max-width:767px){
+                    width: 100%;
+                 }
+
+
+                .menu-links {
+                    width: 100%;
+
+                    .menu-links-liste {
+                        list-style: none;
+                        line-height: 7rem;
+
+                        @media screen and (max-width:767px){
+                            line-height: 4rem;
+                            padding: 10px;
+                         }
+                        .menu-link-hidden {
+                            overflow-y: hidden;
+                            width: fit-content;
+                            height: fit-content;
+                          
+                        }
+
+                        .menu-link {
+                        
+                            color: $linkcolor;
+                            cursor: pointer;
+                            pointer-events: all;
+                            transform: translate(0px, 0px) matrix3d(1, 0, 0, 0, 0, 1, 0, -0.0005, 0, 0, 1, 0, 0, 0, 0, 1);
+                     
+
+                          
+
+                            font: {
+                                size: 9rem;
+                                weight: 500;
+                                family: "Poppins", sans-serif;
+                            }
+
+                            @media screen and (max-width:767px){
+                               font-size: 4rem;
+                             }
+
+                            ;
+
+                            &:hover {
+                                
+                                text-decoration-line: line-through;
+                                text-decoration-style: solid;
+                                text-decoration-thickness: 4px;
+                                text-decoration-skip: 1rem;
+
+                               
+                            }
+
+                        }
+                    }
+                }
+
+                .menu-links-footer {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    font-family: "Poppins", sans-serif;
+
+                    .menu-footer-descript-contacts {
+                        padding: 2.5rem;
+                        display: flex;
+                        flex-direction: column;
+                        color: $linkcolor;
+
+                        .menu-small-title {
+                            font-size: 0.8rem;
+                            font-weight: 900;
+                        }
+
+                        .menu-small-text {
+                            font-size: 0.6rem;
+                            font-weight: lighter;
+                            @media screen and (max-width:767px) {
+                                font: 400 .6rem "Poppins", sans-serif;
+                         
+                             }
+                        }
+
+                    }
+
+                    .menu-footer-contacts {
+                        font-size: 0.6rem;
+                        font-weight: 800;
+                        text-align: right;
+                        color: $linkcolor;
+                        letter-spacing: 1px;
+
+                        @media screen and (max-width:767px){
+                            padding-right: 3rem;
+                        }
+                       
+                        
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .menu-top {
+        z-index: 1000;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+
+        padding: {
+            top: 2rem;
+        }
+
+        ;
+
+
+        .menu-logo {
+            transition: opacity 1s;
+            margin-left: 2rem;
+            color: $menuTopColor;
+            width: 100%;
+            letter-spacing: 0.5px;
+            mix-blend-mode: difference;
+
+
+            font: {
+                size: 0.7rem;
+                family: "Poppins", sans-serif;
+                weight: 900;
+            }
+        }
+
+        .menu-burger-container {
+            display: flex;
+            flex-direction: row;
+            color: $menuTopColor;
+            width: 50%;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 2rem;
+
+            .menu-burger {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+                .menu-burger-text {
+                    margin-right: 0.3rem;
+                    font-size: 0.6rem;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                }
+
+
+                .menu-burger-svg {
+                    width: 17px;
+                    height: 17px;
+                    background-image: url('../../images/svg files/fi-rr-menu-burger.svg');
+                    background-position: center;
+                    background-size: cover;
+                    cursor: pointer;
+
+                }
+            }
+
+        }
+    }
+}

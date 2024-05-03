@@ -1,0 +1,269 @@
+$textcolor:#161616;
+$backgroundColor:#707070;
+$workcontainer:#F2EFEA;
+
+
+.hidden-text {
+    overflow-y: hidden;
+    height: fit-content;
+    min-width:fit-content;
+}
+
+.work-container {
+    transition: transform 2s cubic-bezier(0.165,0.84,0.44,1);
+    width: 80%;
+    margin-bottom: 5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    @media screen and (max-width:767px) {
+        width: 90%;
+
+
+    }
+
+
+
+
+
+
+
+
+    .work-svg-container {
+        pointer-events: none;
+        z-index: 100;
+        // background-color: #000;
+        position: absolute;
+        width: 80%;
+        // opacity: 0.8;
+        overflow: hidden;
+         @media screen and (max-width:767px) {
+            width: 90%;
+        }
+
+        .work-svg-hover {
+
+            z-index: 10000000000;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            color: $workcontainer;
+            padding: 4rem;
+            overflow: hidden;
+            opacity: 0;
+
+
+            @media screen and (max-width:767px) {
+                padding: 1.5rem;
+            }
+
+            .work-svg-btn{
+                transition: all 0.5s;
+                width: 250px;
+                text-align: center;
+                padding: 0.8rem;
+                font-size: 0.6rem;
+                font-weight: 500;
+                margin-top: 1rem;
+                color: $workcontainer;
+                border: solid 1px $workcontainer;
+                background-color: transparent;
+                font-family: "Poppins",sans-serif;
+                pointer-events: all;
+
+                @media screen and (max-width:767px) {
+                    border: solid 4px $workcontainer;
+                }
+                
+
+                &:hover{
+                    transition: all 0.5s;
+                    background-color: $workcontainer;
+                    color: $backgroundColor;
+                }
+
+                @media screen and (max-width:767px) {
+                    width: 90%;
+        
+                }
+            }
+            .work-date {
+                font: lighter 0.8rem "Poppins", sans-serif;
+            }
+
+            .work-title {
+                font: bolder 4rem "Poppins", sans-serif;
+                line-height: 4.5rem;
+                width: 45%;
+
+                @media screen and (max-width:767px) {
+                    font: bolder 2rem "Poppins", sans-serif;
+                    line-height: 2rem;
+                    width: 100%;
+        
+                }
+            }
+
+            .work-small-title {
+                font: bolder 1rem "Poppins", sans-serif;
+                margin-top: 1rem;
+                width: 45%;
+                @media screen and (max-width:767px) {
+                    width: 100%;
+                    
+        
+                }
+            }
+
+            .work-small-text {
+                font: lighter 0.8rem "Poppins", sans-serif;
+                width: 45%;
+                @media screen and (max-width:767px) {
+                    width: 100%;
+                    font: 500 0.8rem "Poppins", sans-serif;
+                    margin-top: 0.5rem;
+        
+                }
+            }
+
+        }
+
+        .work-svg {
+            // background-color: #ffacac;
+            width: 100%;
+            height: 100%;
+
+            svg {
+                width: 100%;
+                height: 110%;
+            }
+        }
+
+
+
+
+    }
+
+
+    .work-infos-container {
+        z-index: -1;
+        // width: 100%;
+        background-color: $workcontainer;
+
+        display: flex;
+        flex-direction: row;
+        padding: 4rem;
+        @media screen and (max-width:767px) {
+            padding: 1.5rem;
+            flex-direction: column;
+            
+        }
+        
+
+
+
+
+
+
+
+        .work-text {
+            width: 45%;
+            color: $backgroundColor;
+            @media screen and (max-width:767px) {
+                width: 100%;
+    
+            }
+
+
+            .work-date {
+                font: lighter 0.8rem "Poppins", sans-serif;
+            }
+
+            .work-title {
+                font: bolder 4rem "Poppins", sans-serif;
+                line-height: 4.5rem;
+                // color: #161616;
+                @media screen and (max-width:767px) {
+                    font: bolder 2rem "Poppins", sans-serif;
+                    line-height: 2rem;
+                    width: 100%;
+                    
+                }
+            }
+
+            .work-small-title {
+                font: bolder 1rem "Poppins", sans-serif;
+                margin-top: 1rem;
+                @media screen and (max-width:767px) {
+                    width: 100%;
+        
+                }
+            }
+
+            .work-small-text {
+                font: lighter 0.8rem "Poppins", sans-serif;
+                @media screen and (max-width:767px) {
+                    width: 100%;
+                    font: 500 0.8rem "Poppins", sans-serif;
+                    margin-top: 0.5rem;
+        
+                }
+            }
+        }
+
+        .work-img {
+            width: 55%;
+            height: 50vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            // background-color: #000;
+            // transform: translateX(20%);
+            transform: translateY(35%) translateX(10%);
+
+            @media screen and (max-width:767px) {
+                width: 100%;
+                transform: translateY(0%) translateX(0%);
+                height: 20vh;
+    
+            }
+
+
+
+            .work-img-back {
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .work-img-tab {
+                transform: translateX(50%) translateY(10%);
+                width: 20%;
+                height: 100%;
+                background-image: url("../../images/projets/tab.png");
+            }
+
+            .work-img-laptop {
+                width: 80%;
+                height: 100%;
+                background-image: url("../../images/projets/mobile.png");
+            }
+
+            .work-img-phone {
+                transform: translateX(-50%) translateY(10%);
+                width: 15%;
+                height: 100%;
+                background-image: url("../../images/projets/phone.png");
+            }
+
+        }
+    }
+
+
+
+
+
+}

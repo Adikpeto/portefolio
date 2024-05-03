@@ -1,0 +1,420 @@
+$colorTitle:#161616;
+$darkTheme:#161616;
+
+
+
+.next-projet{
+  width: 200vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+ 
+
+  .next-projet-container-width{
+    width: 100%;
+  
+    height:50vh;
+    position: absolute;
+    transform: translateX(-20%);
+    bottom: 2rem;
+
+
+    .next-projet-container{
+      background-color: #F8F7F8;
+      width: 70%;
+      padding: 5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  
+      .next-projet-text-container{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+  
+        .next-projet-img-container{
+          
+          
+          // height: 100%;
+          display: grid;
+          grid-template-columns: repeat(2,350px);
+          grid-template-rows: repeat(2,200px);
+          gap: 1.5rem;
+          
+  
+  
+          .next-projet-img{
+            //  width: 100%;
+            //  height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-image: url('../images/capture projets/4075457_1576\ commandes.png');
+  
+          }
+        }
+      }
+  
+      .next-projet-btn-container{
+        width: 50%;
+       
+         
+
+        .next-projet-btn{
+         
+          width: 300px;
+          height: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          &:hover{
+            .next-projet-btn-back{
+              transition: transform 4s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%);
+              transform: scale(0.9);
+            }
+            .next-projet-btn-svg{
+              transition: transform 4s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%);
+              transform: translateX(10%);
+            }
+          }
+
+          .next-projet-btn-back{
+            transition: transform 2s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%);
+            background-color: #161616;
+            clip-path: circle();
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            cursor: pointer;
+
+            
+          }
+          .next-projet-btn-svg{
+             transition: transform 4s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%);
+            z-index: 10000;
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            background-position: center;
+            background-image: url("../images/svg files/fi-rr-arrow-right.svg");
+          }
+        }
+      }
+  
+    }
+  }
+ 
+  
+}
+.container-projet {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+
+
+  .margin-top {
+    margin-top: 5rem;
+
+    @media screen and (max-width:767px) {
+      margin-top: 0rem;
+    }
+  }
+
+
+  .capture-container {
+    max-width: 100%;
+    padding: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    position: relative;
+    height: 300px;
+    @media screen and (max-width:767px) {
+      height: 150px;
+    }
+
+  
+    .carousel-track{
+      @keyframes slide {
+        0%{
+          left: 0;
+        } 
+        100%{
+          left: -100%;
+        }
+      }
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 200%;
+      animation: slide 15s linear infinite;
+      
+      &:hover{
+        animation-play-state: paused;
+
+      }
+
+      .capture-img-container {
+        min-width: 350px;
+        height: 200px;
+        background-color: #E5E5E5;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        margin-right: 5rem;
+  
+        @media screen and (max-width:767px) {
+          min-width: 150px;
+          height: 100px;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          margin-right: 1rem;
+        }
+  
+  
+        .img-capture {
+          width: 100%;
+          height: 100%;
+          background-position: center;
+          background-size: cover;
+          background-image: url("../images/capture\ projets/8.png");
+        }
+      }
+    }
+ 
+
+
+   
+  }
+
+  .capture-text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: $colorTitle;
+    margin-top: 5rem;
+
+
+    .capture-text {
+      width: 80%;
+    }
+
+  }
+
+  .text-bold {
+    font: bolder 1rem "Poppins", sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+  }
+
+  .h1 {
+    font: bolder 4.5rem "Poppins", sans-serif;
+    line-height: 4.5rem;
+
+    @media screen and (max-width:767px) {
+      font: bolder 3.5rem "Poppins", sans-serif;
+      line-height: 3rem;
+
+    }
+  }
+
+  .h2 {
+    font: bolder 3.5rem "Poppins", sans-serif;
+    line-height: 3rem;
+  }
+
+  .body-projet {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // background-color: aliceblue;
+
+
+
+
+    .text-container {
+      display: flex;
+      flex-direction: row;
+      // align-items: center;
+      justify-content: center;
+      color: $colorTitle;
+      gap: 2.5rem;
+
+      @media screen and (max-width:767px) {
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: auto;
+      }
+
+      .title-container {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+
+        .projet-date {
+          font: lighter 0.8rem "Poppins", sans-serif;
+        }
+
+        @media screen and (max-width:767px) {
+          flex-direction: column;
+          width: 100%;
+        }
+
+      }
+
+      .text-small-container {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        @media screen and (max-width:767px) {
+          width: 100%;
+        }
+
+
+        .text-title {
+          z-index: 10000;
+          font: bolder 1rem "Poppins", sans-serif;
+
+        }
+
+        .text-small {
+          font: lighter 1rem "Poppins", sans-serif;
+
+          @media screen and (max-width:767px) {
+            font: 500 1rem "Poppins", sans-serif;
+          }
+        }
+
+
+      }
+    }
+  }
+
+
+  .header-projet {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+
+    .header-top {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      color: $colorTitle;
+
+      .header-top-text {
+        width: 30%;
+        // z-index: 10000000000;
+
+        @media screen and (max-width:767px) {
+
+          width: 100%;
+
+        }
+
+        .header-top-title {
+          font: bolder 1rem "Poppins", sans-serif;
+        }
+
+        .header-top-small-text {
+          font: lighter 0.8rem "Poppins", sans-serif;
+
+          @media screen and (max-width:767px) {
+            font: 500 0.8rem "Poppins", sans-serif;
+          }
+        }
+      }
+
+    }
+
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    
+      width: 100%;
+      color: $colorTitle;
+      height:65vh;
+
+      @media screen and (max-width:767px) {
+        height: auto;
+        margin-top: 2rem !important;
+        margin-bottom: 3rem !important;
+
+      }
+
+      .header-text-container {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        transform: translateX(-75%);
+        z-index: 1000000000;
+        // mix-blend-mode: plus-lighter;
+
+
+        .header-text-date {
+          font: lighter 0.8rem "Poppins", sans-serif;
+        }
+
+        .header-text-title {
+          font: bolder 4rem "Poppins", sans-serif;
+          line-height: 4.5rem;
+          z-index: -1;
+
+          // mix-blend-mode: difference;
+          // background-blend-mode: difference;
+          @media screen and (max-width:767px) {
+            font: bolder 2rem "Poppins", sans-serif;
+            line-height: 2rem;
+
+
+          }
+        }
+      }
+
+      .header-img-transform {
+        transition: transform 4s linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%);
+        transform: translateX(5%);
+        width: 80%;
+        height: 80vh;
+        background-image: url("../images/capture projets/4075457_1576\ connexion.png");
+        // filter: grayscale(1) contrast(1.2);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 100;
+        // mix-blend-mode:difference;
+        background-blend-mode: difference;
+
+        @media screen and (max-width:767px) {
+          margin-top: 2rem;
+  
+        }
+
+
+
+      }
+    }
+  }
+}
