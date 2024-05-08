@@ -1,12 +1,9 @@
 import React from 'react'
-import { Suspense } from 'react'
-import { Canvas } from '@react-three/fiber'
-import { Environment } from '@react-three/drei'
 import Layout from '../../components/layout/layout'
 import "./porteFolio.scss"
 import WorkCard from '../../components/workCard/workCard'
-import { motion, AnimatePresence } from "framer-motion"
-import { OrbitControls } from '@react-three/drei'
+import { motion } from "framer-motion"
+
 
 
 const data = [

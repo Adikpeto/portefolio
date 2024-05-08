@@ -2,7 +2,7 @@ import React, { useRef, useLayoutEffect } from 'react'
 import Menu from '../menu/menu'
 import { gsap } from 'gsap'
 import "./layout.scss"
-import Canvas from '../Canvas/Canvas'
+
 
 function Layout({ children,nameTransparent = false }) {
 

@@ -4,7 +4,7 @@ import { useAppContext } from '../../contexts/appContext'
 import { Plane } from "curtainsjs"
 import { fs, vs } from './shaders'
 import url from "../../images/new/3.jpg"
-import Canvas from '../Canvas/Canvas'
+
 function ImageCpn() {
     const planeRef = useRef()
     const { state } = useAppContext()
