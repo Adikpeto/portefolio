@@ -382,12 +382,29 @@ const Home = () => {
   const { scrollYProgress } = useScroll({
     target: targetRef
   })
-
-  let x = 0
-  if (typeof window !== 'undefined') {
-    x = useTransform(scrollYProgress, [0, 1], [window.innerWidth > 767 ? "30%" : "40%", window.innerWidth > 767 ? "-50%" : "-110%"])
+  
+  function windowReturnX() {
+    if (typeof window !== 'undefined') {
+      if(window.innerWidth > 767)
+        return "30%"
+     else 
+        return "40%"
+    }else{
+      return "0%"
+    }       
   }
 
+  function windowReturnY() {
+    if (typeof window !== 'undefined') {
+      if(window.innerWidth > 767)
+        return "-50%" 
+     else 
+        return "-110%"
+    }else{
+      return "0%"
+    }       
+  }
+  const x = useTransform(scrollYProgress, [0, 1], [windowReturnX(), windowReturnY() ])
   // const x = useTransform(scrollYProgress, [0, 1], ["30%", "-50%"])
 
   useEffect(() => {
