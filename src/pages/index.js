@@ -97,24 +97,29 @@ const Home = () => {
   // Func Img
 
   const parallax = (event) => {
+    
     const speed = 5
-
     const x = (window.innerWidth - event.pageX * speed) / 100
     const y = (window.innerHeight - event.pageY * speed) / 100
-
-
-
     dispatch({
       type: "CHANGE/COORDINATES",
       payload: { x: x, y: y }
     })
+   
+
   }
 
   const handleMouseEnter = () => {
-    imgprofilRef.current.addEventListener("mousemove", parallax)
+    if (typeof window !== 'undefined') {
+      imgprofilRef.current.addEventListener("mousemove", parallax)
+    }
+    
   }
   const handleMouseLeave = () => {
-    imgprofilRef.current.removeEventListener("mousemove", parallax)
+    if (typeof window !== 'undefined') {
+      imgprofilRef.current.removeEventListener("mousemove", parallax)
+    }
+   
 
     dispatch({
       type: "CHANGE/COORDINATES",
@@ -143,11 +148,16 @@ const Home = () => {
   }
 
   const handleMouseEnterProject = () => {
-    projectsRef.current.addEventListener("mousemove", parallaxProject)
+    if (typeof window !== 'undefined') {
+      projectsRef.current.addEventListener("mousemove", parallaxProject)
+    }
+   
   }
   const handleMouseLeaveProject = () => {
-    projectsRef.current.removeEventListener("mousemove", parallaxProject)
-
+    
+    if (typeof window !== 'undefined') {
+      projectsRef.current.removeEventListener("mousemove", parallaxProject)
+    }
     dispatch({
       type: "CHANGE/COORDINATESPROJECT",
       payload: initialState.parallaxPosProjet
@@ -172,10 +182,16 @@ const Home = () => {
   }
 
   const handleMouseEnterAP1 = () => {
-    ap1ref.current.addEventListener("mousemove", parallaxAP1)
+    if (typeof window !== 'undefined') {
+      ap1ref.current.addEventListener("mousemove", parallaxAP1)
+    }
+    
   }
   const handleMouseLeaveAP1 = () => {
-    ap1ref.current.removeEventListener("mousemove", parallaxAP1)
+    if (typeof window !== 'undefined') {
+      ap1ref.current.removeEventListener("mousemove", parallaxAP1)
+    }
+   
 
     dispatch({
       type: "CHANGE/COORDINATESAP1",
@@ -250,6 +266,7 @@ const Home = () => {
 
   useEffect(() => {
     function scrollview() {
+    
       const fixedExpreiencestextStyle = document.querySelector(".fixed-experiences-text").style
       if (titlesmallview) {
         fixedExpreiencestextStyle.opacity = 1
@@ -365,7 +382,12 @@ const Home = () => {
   const { scrollYProgress } = useScroll({
     target: targetRef
   })
-  const x = useTransform(scrollYProgress, [0, 1], [window.innerWidth > 767 ? "30%" : "40%", window.innerWidth > 767 ? "-50%" : "-110%"])
+
+  let x = 0
+  if (typeof window !== 'undefined') {
+    x = useTransform(scrollYProgress, [0, 1], [window.innerWidth > 767 ? "30%" : "40%", window.innerWidth > 767 ? "-50%" : "-110%"])
+  }
+
   // const x = useTransform(scrollYProgress, [0, 1], ["30%", "-50%"])
 
   useEffect(() => {
