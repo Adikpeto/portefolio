@@ -11,7 +11,7 @@ export const itemsList = [
     },
     {
         title:"contacts",
-        route:"contacts",
+        route:"/contacts",
         imgUrl:4
     }
 ]

@@ -105,7 +105,7 @@ function CusorCustom({ entercontactlinked = false, entercontactemail = false, mo
      return (
           <div>
                <div className='app-cusor' ref={minicusorRef}></div>
-               <div className='app-minicusor' style={{mixBlendMode: infosend ? "normal" : "exclusion",backgroundColor:infosend ? "#00000000" : "white"   ,width: entercontactemail || entercontactlinked || mouselarge || infosend ? "400px" : "10px", height: entercontactemail || entercontactlinked || mouselarge || infosend ? "400px" : "10px" }} ref={maincusorRef}>
+               <div className='app-minicusor' style={{mixBlendMode: infosend ? "normal" : "exclusion",backgroundColor:infosend ? "#00000000" : "white"   ,width: entercontactemail || entercontactlinked || mouselarge || infosend ? "2000px" : "10px", height: entercontactemail || entercontactlinked || mouselarge || infosend ? "2000px" : "10px" }} ref={maincusorRef}>
                     <div className="cursor-text" style={{ opacity: entercontactemail || entercontactlinked || infosend ? 1 : 0 }}>
                          {entercontactlinked && "linkedin/adikpeto-aristide"}
                          {entercontactemail && "adikpetoaristidezeus@gmail.com"}

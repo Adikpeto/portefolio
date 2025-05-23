@@ -110,15 +110,18 @@ const Home = () => {
   }
 
   const handleMouseEnter = () => {
-    if (typeof window !== 'undefined') {
-      imgprofilRef.current.addEventListener("mousemove", parallax)
-    }
+    // if (typeof window !== 'undefined') {
+      
+    // }
+    imgprofilRef.current.addEventListener("mousemove", parallax)
     
   }
   const handleMouseLeave = () => {
-    if (typeof window !== 'undefined') {
-      imgprofilRef.current.removeEventListener("mousemove", parallax)
-    }
+    // if (typeof window !== 'undefined') {
+      
+    // }
+
+    imgprofilRef.current.removeEventListener("mousemove", parallax)
    
 
     dispatch({
@@ -148,16 +151,18 @@ const Home = () => {
   }
 
   const handleMouseEnterProject = () => {
-    if (typeof window !== 'undefined') {
-      projectsRef.current.addEventListener("mousemove", parallaxProject)
-    }
+    // if (typeof window !== 'undefined') {
+      
+    // }
+    projectsRef.current.addEventListener("mousemove", parallaxProject)
    
   }
   const handleMouseLeaveProject = () => {
     
-    if (typeof window !== 'undefined') {
-      projectsRef.current.removeEventListener("mousemove", parallaxProject)
-    }
+    // if (typeof window !== 'undefined') {
+      
+    // }
+    projectsRef.current.removeEventListener("mousemove", parallaxProject)
     dispatch({
       type: "CHANGE/COORDINATESPROJECT",
       payload: initialState.parallaxPosProjet
@@ -182,16 +187,17 @@ const Home = () => {
   }
 
   const handleMouseEnterAP1 = () => {
-    if (typeof window !== 'undefined') {
-      ap1ref.current.addEventListener("mousemove", parallaxAP1)
-    }
+    // if (typeof window !== 'undefined') {
+     
+    // }
+    ap1ref.current.addEventListener("mousemove", parallaxAP1)
     
   }
   const handleMouseLeaveAP1 = () => {
-    if (typeof window !== 'undefined') {
-      ap1ref.current.removeEventListener("mousemove", parallaxAP1)
-    }
-   
+    // if (typeof window !== 'undefined') {
+      
+    // }
+    ap1ref.current.removeEventListener("mousemove", parallaxAP1)   
 
     dispatch({
       type: "CHANGE/COORDINATESAP1",
@@ -464,7 +470,7 @@ const Home = () => {
                 <div className="a-propos-title">Mon objectif de développeur.</div>
                 <div className="a-propos-text">
 
-                  Vous êtes une <Strong>entreprise</Strong> à la recherche du travail bien fait dans le domaine du <Strong>développement web du développement mobile et du desktop</Strong> je vous aide à réaliser vos projets en apportant ma pierre à l'édifice en travaillant d'arrache-pied et en vous accompagnant dans de nouvelles aventures. En tant que <Strong>développeur full-stack</Strong>, je propose aussi mes services à toute personne ayant des projets personnels à réaliser en un temps record.
+                  Vous êtes une <Strong>entreprise</Strong> à la recherche du travail bien fait dans le domaine du <Strong>développement web du développement mobile et du desktop</Strong> je vous aide à réaliser vos projets en apportant ma pierre à l'édifice en travaillant d'arrache-pied et en vous accompagnant dans de nouvelles aventures. En tant que <Strong>développeur full-stack</Strong>, je propose aussi mes services à toutes personnes ayant des projets personnels à réaliser en un temps record.
                 </div>
                 <div className="a-propos-card-img-container" onMouseEnter={() => setmouselarge(true)} onMouseLeave={() => setmouselarge(false)}>
                   <div className="a-propos-card-img img-3"></div>
@@ -474,7 +480,7 @@ const Home = () => {
                 <div className="a-propos-title">Mes autres passions.</div>
                 <div className="a-propos-text">
                   Notre monde n'a pas besoin d'âmes tièdes mais de cœur brûlant et passionnée.
-                  Pour ma part ma  passion première est tournée vers la <Strong>technologie</Strong>.C'est pourquoi je suis passionné par tout ce qui touche à la science et à la technologie, y compris les <Strong>jeux vidéo</Strong>. Cependant tout homme ne peux rester sans avoir une passion dans le domaine du sport ce qui m'as fait tourner vers le <Strong>basket ball</Strong>. En pratiquant le basket ball je me sens épanouie et dynamique. Enfin j'éprouve aussi grande passion à la <Strong>lecture</Strong>. Une passion que j'ai gardé depuis mon enfance.
+                  Pour ma part ma  passion première est tournée vers la <Strong>technologie</Strong>.C'est pourquoi je suis passionné par tout ce qui touche à la science et à la technologie, y compris les <Strong>jeux vidéo</Strong>. Cependant tout homme ne peux rester sans avoir une passion dans le domaine du sport ce qui m'as fait tourner vers le <Strong>basket ball</Strong>. En pratiquant le basket ball je me sens épanouie et dynamique. Enfin j'éprouve aussi une grande passion à la <Strong>lecture</Strong>. Une passion que j'ai gardé depuis mon enfance.
 
                 </div>
                 <div className="a-propos-card-img-container" onMouseEnter={() => setmouselarge(true)} onMouseLeave={() => setmouselarge(false)}>

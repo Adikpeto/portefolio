@@ -1,6 +1,8 @@
 $textcolor:#F8F7F8;
 $linkcolor:#E9E9E9;
 $menuTopColor:#161616;
+$fontSizeSmallText:1rem;
+$fontSizeSmallInfo:0.8rem;
 
 svg{
     opacity: 1;
@@ -152,7 +154,7 @@ svg{
                     }
 
                     .menu-small-text {
-                        font-size: 0.8rem;
+                        font-size: $fontSizeSmallText;
                         font-weight: lighter;
                         @media screen and (max-width:767px) {
                             font: 400 .8rem "Poppins", sans-serif;
@@ -245,7 +247,7 @@ svg{
                         }
 
                         .menu-small-text {
-                            font-size: 0.6rem;
+                            font-size: $fontSizeSmallText;
                             font-weight: lighter;
                             @media screen and (max-width:767px) {
                                 font: 400 .6rem "Poppins", sans-serif;
@@ -256,7 +258,7 @@ svg{
                     }
 
                     .menu-footer-contacts {
-                        font-size: 0.6rem;
+                        font-size: 1rem;
                         font-weight: 800;
                         text-align: right;
                         color: $linkcolor;
